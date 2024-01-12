@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="5dp">
+
+
+    <FrameLayout
+        android:id="@+id/frame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <FrameLayout
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="end">
+            <ImageView
+                android:id="@+id/imgBanner"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_launcher_background"
+                android:layout_alignParentRight="true"/>
+
+            <ImageView
+                android:id="@+id/sss"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:scaleType="centerCrop"
+                android:layout_marginEnd="10dp"
+                android:padding="5dp"
+                android:layout_gravity="end|center_vertical"
+                android:src="@drawable/droparrow"
+                android:layout_alignParentRight="true"
+                app:tint="@color/white" />
+        </FrameLayout>
+        <ImageView
+            android:layout_width="280dp"
+            android:layout_height="150dp"
+            android:src="@drawable/bg_gggg" />
+        <TextView
+            android:id="@+id/catName"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_gravity="center_vertical"
+            android:text="-create your own fabrics-"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+    </FrameLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recsub"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/frame"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"/>
+
+</RelativeLayout>

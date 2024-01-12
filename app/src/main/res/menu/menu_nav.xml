@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_recent"
+        android:icon="@drawable/ic_baseline_home_24"
+        android:title="Home" />
+
+    <item
+        android:id="@+id/menu_files"
+        android:icon="@drawable/ic_baseline_menu_24"
+        android:title="Category" />
+    <item
+        android:id="@+id/menu_bookmark"
+        android:icon="@drawable/ic_baseline_menu_24"
+        android:title="Caurate" />
+
+    <item
+        android:id="@+id/sale"
+        android:icon="@drawable/ic_baseline_menu_24"
+        android:title="Sale" />
+
+    <item
+        android:id="@+id/more"
+        android:icon="@drawable/ic_baseline_menu_24"
+        android:title="More" />
+</menu>
